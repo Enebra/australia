@@ -1,0 +1,137 @@
+<div class="slider_wrapper">
+    <div class="image-slider swiper-container">
+        <swiper
+            effect='cube'
+            [loop]="true"
+            [grabCursor]="true"
+            [slideToClickedSlide]="true"
+            [autoHeight]="false"
+            [mousewheel]="{ sensitivity: 1 }"
+            [keyboard]="{ onlyInViewport: true, pageUpDown: true }"
+            [autoplay]="{ delay: 3000, disableOnInteraction: true }"
+            [cubeEffect]='{ slideShadows: false, shadow: false }'
+            [speed]="800"
+            [pagination]="{ clickable: true, dynamicBullets: true }"
+            [navigation]="true"
+            class="image-slider__wrapper swiper-wrapper"
+        >
+            <ng-template swiperSlide data-hash="slide-1" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">01</div>
+                        <div class="image-slider__title">
+                            <h2>Professional & Safe Penetration test</h2>
+                        </div>
+                        <div class="image-slider__text">
+                            Learn about vulnerabilities before others
+                        </div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/Penetration_test.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide data-hash="slide-2" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">02</div>
+                        <div class="image-slider__title">
+                            <h2>Video & Audio Production</h2>
+                        </div>
+                        <div class="image-slider__text">
+                            Commercials, infographics, special effects ... all here
+                        </div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/VideoAudio.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide data-hash="slide-3" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">03</div>
+                        <div class="image-slider__title">
+                            <h2>
+                                ArcGIS Creation of various types of maps Routing & Search engine
+                            </h2>
+                        </div>
+                        <div class="image-slider__text">Our maps are adapted for Garmin</div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/ArcGis.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide data-hash="slide-4" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">04</div>
+                        <div class="image-slider__title">
+                            <h2>Microcontrollers Electronic products Software</h2>
+                        </div>
+                        <div class="image-slider__text">
+                            Solutions allowing to manage the process
+                        </div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/Microcontrollers.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide data-hash="slide-5" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">05</div>
+                        <div class="image-slider__title">
+                            <h2>Design</h2>
+                        </div>
+                        <div class="image-slider__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, atque
+                            commodi cupiditate dignissimos, dolor ducimus earum esse iure nisi
+                            nostrum odit quis, repellat suscipit. Amet minus quas sequi voluptatum.
+                            Voluptates.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aliquam, atque commodi cupiditate dignissimos, dolor ducimus earum esse
+                            iure nisi nostrum odit quis, repellat suscipit. Amet minus quas sequi
+                            voluptatum. Voluptates.
+                        </div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/Design.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide data-hash="slide-6" class="image-slider__slide swiper-slide">
+                <div class="image-slider__container">
+                    <div class="image-slider__info">
+                        <div class="image-slider__info-bg">06</div>
+                        <div class="image-slider__title">
+                            <h2>Biometric</h2>
+                        </div>
+                        <div class="image-slider__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, atque
+                            commodi cupiditate dignissimos, dolor ducimus earum esse iure nisi
+                            nostrum odit quis, repellat suscipit. Amet minus quas sequi voluptatum.
+                            Voluptates.
+                        </div>
+                        <a href="#" class="image-slider__button">Learn more</a>
+                    </div>
+                    <div class="image-slider__image">
+                        <div class="image-slider__image-bg"></div>
+                        <img src="./assets/img/sliders/Biometric.png" alt="Image" />
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>

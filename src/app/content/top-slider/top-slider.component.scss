@@ -1,0 +1,29 @@
+.swiper-button-prev, .swiper-button-next {
+  top: 18%;
+}
+.swiper-wrapper {
+  height: 0;
+}
+.image-slider {
+  padding: 30px 0 0;
+}
+
+.image-slider__wrapper {
+  min-height: 380px;
+}
+
+.image-slider__button {
+    margin-bottom: 70px;
+}
+.image-slider__info-bg {
+  top: -10%;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 7%;
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 7%;
+  right: auto;
+}
+

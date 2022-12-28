@@ -1,0 +1,46 @@
+<div class="category">
+    <div class="container">
+        <div class="category__wrapper">
+            <h2
+                class="category__title title _anim-items _anim-no-hide"
+                [ngClass]="{ _active: start }"
+            >
+                {{ sectionTitle }}
+            </h2>
+            <div class="category__items">
+                <div
+                    class="category__column _anim-items _anim-no-hide"
+                    [ngClass]="{ _active: start }" *ngFor='let category of categories'
+                >
+                    <a href="{{category.url}}" class="category__item">{{category.name}}</a>
+                </div>
+            </div>
+            <div class="category__cards">
+                <div class="cards__row">
+                    <div
+                        class="cards__column cards__column_1 _anim-items _anim-no-hide"
+                        [ngClass]="{ _active: start }" *ngFor='let card of cards; let i = index'
+                    >
+                        <div class="cards__item">
+                            <div class="cards__image ibg">
+                                <div class="cards__logo" [ngClass]="['cards__logo_'+[i+1]]">{{card.logo}}</div>
+                                <img src="{{card.img}}" alt="" />
+                            </div>
+                            <div class="cards__text">
+                                <div class="cards__title title">{{card.title}}</div>
+                                <div class="cards__body">
+                                    <p>
+                                      {{card.text}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cards__reference">
+                                <a href="{{card.url}}" class="cards__link">{{card.action}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

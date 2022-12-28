@@ -1,0 +1,48 @@
+<div class="header" id="top">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__column">
+                <div class="header__logo-scale _anim-items _anim-no-hide" [ngClass]="{'_active': start, 'mobile': burgerMenu}">
+                    <a href="#" class="header__logo logo" [ngClass]="{'mobile': burgerMenu}"></a>
+                </div>
+            </div>
+            <nav class="header__column menu-header">
+                <div class="menu-header__burger icon-menu" [ngClass]="{'active': burgerMenu}" (click)='burgerMenuToggle()'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-header__menu" [ngClass]="{'active': burgerMenu}">
+                    <menu class="menu-header__list _anim-items _anim-no-hide" [ngClass]="{'_active': start, 'mobile': burgerMenu}">
+                        <li>
+                            <a href="#" class="menu-header__link"><span>Investors</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-header__link"><span>About Us</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-header__link"><span>Our Services</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-header__link"><span>Contact</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-header__link"><span>Career</span></a>
+                        </li>
+<!--                        <li>-->
+<!--                            <a href="#" class="menu-header__link menu-header__link&#45;&#45;circle">-->
+<!--                                <span>Our Locations</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+                        <li>
+<!--                          <img style='max-width: 30px' src='../assets/img/icons/sun.svg' alt='*'>-->
+<!--                          <img style='max-width: 25px' src='../assets/img/icons/moon.svg' alt='*'>-->
+                          <button *ngIf="boolTheme" type='button' class='menu-header__link menu-header__link--theme' (click)='themeToggle()'></button>
+                          <button *ngIf="!boolTheme" type='button' class='menu-header__link menu-header__link--reset active' (click)='themeToggle()'></button>
+                        </li>
+                    </menu>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

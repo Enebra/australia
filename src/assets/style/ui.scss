@@ -1,0 +1,53 @@
+@import 'mixins';
+@import 'palette';
+.ibg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //position: relative;
+    img{
+        display: none;
+        //width: 0;
+        //height: 0;
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        //opacity: 0;
+        //visibility: hidden;
+    }
+}
+.slick-slider{
+    position: relative;
+    .slick-track{}
+    .slick-list {}
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        @include flexbox();
+        align-items: flex-start;
+    }
+    .slick-slide{}
+    .slick-dots{
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        li{
+            margin: 0 5px;
+            button{
+                font-size: 0;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                border: 1px solid $color-text;
+                background-color: transparent;
+            }
+            &.slick-active{
+                button{
+                    background-color: $color-text;
+                }
+            }
+        }
+    }
+}
